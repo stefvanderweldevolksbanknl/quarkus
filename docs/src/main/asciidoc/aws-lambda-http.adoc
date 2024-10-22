@@ -89,10 +89,10 @@ Lambda requires Linux binaries.  You can do this by passing `-Dquarkus.native.co
 This requires you to have Docker installed locally, however.
 
 NOTE: According to https://docs.aws.amazon.com/linux/al2023/ug/system-requirements.html#system-requirements-cpu-x86-64[the AWS docs], AL2023 
-x86-64 binaries are built for the x86-64**v2** revision of the x86-64 architecture. Quarkus defaults 
-https://quarkus.io/guides/building-native-image#quarkus-core_quarkus-native-march[quarkus.native.march] to x86-64**v3**. This could cause 
+x86-64 binaries are built for the x86-64-**v2** revision of the x86-64 architecture. Quarkus defaults 
+https://quarkus.io/guides/building-native-image#quarkus-core_quarkus-native-march[quarkus.native.march] to x86-64-**v3**. This could cause 
 https://repost.aws/questions/QUBVnl6hn-Toe1LPr1qjOXzg/lambda-failed-with-java-compiled-into-machine-code[issues] if Lambda provisions older 
-hardware. To maximize Lambda compatibility, set `quarkus.native.march=x86-64v2` for x86-64. See: 
+hardware. To maximize Lambda compatibility, set `quarkus.native.march=x86-64-v2` for x86-64. See: 
 https://quarkus.io/guides/native-reference#work-around-missing-cpu-features[]
 
 include::{includes}/devtools/build-native-container.adoc[]
